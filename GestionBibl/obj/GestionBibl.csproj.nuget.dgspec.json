@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aimra\\source\\repos\\GestionBibl\\GestionBibl\\GestionBibl.csproj": {}
+    "C:\\Users\\Benat\\OneDrive\\Bureau\\Projet C#\\gestionbiblio\\GestionBibliotheque.NET\\GestionBibl\\GestionBibl.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aimra\\source\\repos\\GestionBibl\\GestionBibl\\GestionBibl.csproj": {
+    "C:\\Users\\Benat\\OneDrive\\Bureau\\Projet C#\\gestionbiblio\\GestionBibliotheque.NET\\GestionBibl\\GestionBibl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aimra\\source\\repos\\GestionBibl\\GestionBibl\\GestionBibl.csproj",
+        "projectUniqueName": "C:\\Users\\Benat\\OneDrive\\Bureau\\Projet C#\\gestionbiblio\\GestionBibliotheque.NET\\GestionBibl\\GestionBibl.csproj",
         "projectName": "GestionBibl",
-        "projectPath": "C:\\Users\\aimra\\source\\repos\\GestionBibl\\GestionBibl\\GestionBibl.csproj",
-        "packagesPath": "C:\\Users\\aimra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aimra\\source\\repos\\GestionBibl\\GestionBibl\\obj\\",
+        "projectPath": "C:\\Users\\Benat\\OneDrive\\Bureau\\Projet C#\\gestionbiblio\\GestionBibliotheque.NET\\GestionBibl\\GestionBibl.csproj",
+        "packagesPath": "C:\\Users\\Benat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Benat\\OneDrive\\Bureau\\Projet C#\\gestionbiblio\\GestionBibliotheque.NET\\GestionBibl\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\aimra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Benat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

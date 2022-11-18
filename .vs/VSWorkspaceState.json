@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\GestionBibl"
+    "\\GestionBibl",
+    "\\GestionBibl\\views"
   ],
-  "SelectedNode": "\\GestionBibl\\GOuvrages.Designer.cs",
+  "SelectedNode": "\\GestionBibl",
   "PreviewInSolutionExplorer": false
 }
