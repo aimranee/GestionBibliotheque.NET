@@ -5,7 +5,6 @@ C:\Users\aimra\source\repos\GestionBibl\GestionBibl\bin\Debug\net6.0-windows\Ges
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\bin\Debug\net6.0-windows\GestionBibl.pdb
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.csproj.AssemblyReference.cache
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.Form1.resources
-C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.Form2.resources
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.Properties.Resources.resources
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.csproj.GenerateResource.cache
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.GeneratedMSBuildEditorConfig.editorconfig
@@ -30,3 +29,36 @@ C:\Users\aimra\source\repos\GestionBibl\GestionBibl\bin\Debug\net6.0-windows\K4o
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\bin\Debug\net6.0-windows\MySql.Data.dll
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\bin\Debug\net6.0-windows\ZstdNet.dll
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\bin\Debug\net6.0-windows\GestionBibl.exe
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\bin\Debug\net6.0-windows\GestionBibl.deps.json
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\bin\Debug\net6.0-windows\GestionBibl.runtimeconfig.json
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\bin\Debug\net6.0-windows\GestionBibl.dll
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\bin\Debug\net6.0-windows\GestionBibl.pdb
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\bin\Debug\net6.0-windows\Guna.UI2.dll
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\bin\Debug\net6.0-windows\ZstdNet.dll
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.csproj.AssemblyReference.cache
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.Properties.Resources.resources
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.views.FormAddClient.resources
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.views.GClient.resources
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.GEmpunts.resources
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.GOuvrages.resources
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.Form1.resources
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.PageHome.resources
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.csproj.GenerateResource.cache
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.AssemblyInfoInputs.cache
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.AssemblyInfo.cs
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.csproj.CoreCompileInputs.cache
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.csproj.CopyComplete
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.dll
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\obj\Debug\net6.0-windows\refint\GestionBibl.dll
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.pdb
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.genruntimeconfig.cache
+C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\obj\Debug\net6.0-windows\ref\GestionBibl.dll
+C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.PageHome.resources
