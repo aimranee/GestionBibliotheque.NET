@@ -20,7 +20,6 @@ C:\Users\aimra\source\repos\GestionBibl\GestionBibl\bin\Debug\net6.0-windows\Gun
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.csproj.CopyComplete
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.GEmpunts.resources
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.GOuvrages.resources
-C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.views.FormAddClient.resources
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.views.GClient.resources
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\bin\Debug\net6.0-windows\Google.Protobuf.dll
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
@@ -62,3 +61,4 @@ C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\G
 C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.genruntimeconfig.cache
 C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\obj\Debug\net6.0-windows\ref\GestionBibl.dll
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.PageHome.resources
+C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.views.NEmprunt.resources

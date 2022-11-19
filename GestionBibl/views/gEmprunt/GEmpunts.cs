@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GestionBibl.Model;
+using GestionBibl.views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +22,12 @@ namespace GestionBibl
         private void GEmpunts_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            NEmprunt form = new NEmprunt();
+            form.ShowDialog();
         }
     }
 }

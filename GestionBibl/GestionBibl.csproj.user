@@ -7,13 +7,13 @@
     <Compile Update="views\GClient.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="views\GEmpunts.cs">
+    <Compile Update="views\gEmprunt\GEmpunts.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="views\GOuvrages.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="views\Form1.cs">
+    <Compile Update="views\gEmprunt\NEmprunt.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="views\login\Form1.cs">

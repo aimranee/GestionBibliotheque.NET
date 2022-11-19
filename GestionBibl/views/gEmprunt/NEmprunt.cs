@@ -10,14 +10,24 @@ using System.Windows.Forms;
 
 namespace GestionBibl.views
 {
-    public partial class FormAddClient : Form
+    public partial class NEmprunt : Form
     {
-        public FormAddClient()
+        public NEmprunt()
         {
             InitializeComponent();
         }
 
         private void textName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormAddClient_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
