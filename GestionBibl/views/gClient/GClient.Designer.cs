@@ -102,7 +102,6 @@
             this.dataGridView.RowTemplate.Height = 25;
             this.dataGridView.Size = new System.Drawing.Size(708, 150);
             this.dataGridView.TabIndex = 6;
-            this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick);
             this.dataGridView.SelectionChanged += new System.EventHandler(this.dataGridView_SelectionChanged);
             // 
             // btnAjouter
@@ -169,7 +168,6 @@
             this.txtSrch.Name = "txtSrch";
             this.txtSrch.Size = new System.Drawing.Size(156, 23);
             this.txtSrch.TabIndex = 14;
-            this.txtSrch.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btnSrch
             // 

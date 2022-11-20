@@ -41,14 +41,14 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.SearchB = new System.Windows.Forms.TextBox();
             this.dataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.clientid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ouvrageid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateemprunt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.daterendre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -153,6 +153,30 @@
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = global::GestionBibl.Properties.Resources.icons8_plus_math_48;
+            this.pictureBox3.Location = new System.Drawing.Point(66, 32);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(39, 39);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 24;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.Image = global::GestionBibl.Properties.Resources.icons8_available_updates_48;
+            this.pictureBox4.Location = new System.Drawing.Point(132, 32);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(39, 39);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 25;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
             // clientid
             // 
             this.clientid.DataPropertyName = "clientid";
@@ -185,7 +209,7 @@
             this.daterendre.DataPropertyName = "daterendre";
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.daterendre.DefaultCellStyle = dataGridViewCellStyle6;
-            this.daterendre.HeaderText = "date Rendre";
+            this.daterendre.HeaderText = "Date Rendre";
             this.daterendre.Name = "daterendre";
             this.daterendre.ReadOnly = true;
             // 
@@ -221,30 +245,6 @@
             this.Column7.Text = "Supprimer";
             this.Column7.UseColumnTextForButtonValue = true;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = global::GestionBibl.Properties.Resources.icons8_plus_math_48;
-            this.pictureBox3.Location = new System.Drawing.Point(66, 32);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(39, 39);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 24;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Image = global::GestionBibl.Properties.Resources.icons8_available_updates_48;
-            this.pictureBox4.Location = new System.Drawing.Point(132, 32);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(39, 39);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 25;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
             // GEmpunts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -273,13 +273,13 @@
         private Panel panel5;
         private TextBox SearchB;
         private Guna.UI2.WinForms.Guna2DataGridView dataGridView;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox4;
         private DataGridViewTextBoxColumn clientid;
         private DataGridViewTextBoxColumn ouvrageid;
         private DataGridViewTextBoxColumn dateemprunt;
         private DataGridViewTextBoxColumn daterendre;
         private DataGridViewButtonColumn Column1;
         private DataGridViewButtonColumn Column7;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
     }
 }

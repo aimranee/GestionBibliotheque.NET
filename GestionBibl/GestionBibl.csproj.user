@@ -4,7 +4,7 @@
     <Compile Update="views\PageHome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="views\GClient.cs">
+    <Compile Update="views\gClient\GClient.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="views\gEmprunt\GEmpunts.cs">
