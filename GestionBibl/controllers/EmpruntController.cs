@@ -29,7 +29,7 @@ namespace GestionBibl.controllers
 
         public static void AjouterEmprunt(Emprunt emprunt)
         {
-            string sql = "INSERT INTO emprunt VALUES (NULL, @ClientId, @OuvrageId, @dateEmprunt, @dateRendre)";
+            string sql = "INSERT INTO emprunt VALUES (@ClientId, @OuvrageId, @dateEmprunt, @dateRendre)";
             MySqlConnection cnn = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, cnn);
             cmd.CommandType = CommandType.Text;
@@ -51,9 +51,9 @@ namespace GestionBibl.controllers
             cnn.Close();
         }
 
-        public static void UpdateEmprunt(Emprunt emprunt)
+        public static void UpdateEmprunt(Emprunt emprunt, string idC, string idO)
         {
-            string sql = "UPDATE emprunt SET clientId = @clientId, ouvrageId = @ouvrageId, dateEmprunt = @dateEmprunt, dateRendre = @dateRendre";
+            string sql = "UPDATE emprunt SET clientId = @clientId, ouvrageId = @ouvrageId, dateEmprunt = @dateEmprunt, dateRendre = @dateRendre WHERE clientId = @idC and ouvrageId = @idO";
             MySqlConnection cnn = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, cnn);
             cmd.CommandType = CommandType.Text;
@@ -61,6 +61,8 @@ namespace GestionBibl.controllers
             cmd.Parameters.Add("@ouvrageId", MySqlDbType.VarChar).Value = emprunt.OuvrageId;
             cmd.Parameters.Add("@dateEmprunt", MySqlDbType.VarChar).Value = emprunt.DateEmprunt;
             cmd.Parameters.Add("@dateRendre", MySqlDbType.VarChar).Value = emprunt.DateRendre;
+            cmd.Parameters.Add("@idC", MySqlDbType.VarChar).Value = idC;
+            cmd.Parameters.Add("@idO", MySqlDbType.VarChar).Value = idO;
 
             try
             {
@@ -76,7 +78,7 @@ namespace GestionBibl.controllers
             cnn.Close();
         }
 
-        public static void SupprimerEmprunt(int idC, int idO)
+        public static void SupprimerEmprunt(string idC, string idO)
         {
             string sql = "DELETE FROM emprunt WHERE clientId = @clientId and ouvrageId = @ouvrageId";
             MySqlConnection cnn = GetConnection();
@@ -107,6 +109,7 @@ namespace GestionBibl.controllers
             MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
             DataTable tbl = new DataTable();
             adp.Fill(tbl);
+            dgv.DataSource = tbl;
             con.Close();
         }
 

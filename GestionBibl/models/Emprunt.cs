@@ -8,14 +8,22 @@ namespace GestionBibl.Model
 {
     internal class Emprunt
     {
-        private int ouvrageId;
-        private int clientId;
-        private string? dateEmprunt;
-        private string? dateRendre;
+        private string ouvrageId;
+        private string clientId;
+        private string dateEmprunt;
+        private string dateRendre;
 
         public string DateEmprunt { get => dateEmprunt; set => dateEmprunt = value; }
         public string DateRendre { get => dateRendre; set => dateRendre = value; }
-        internal int OuvrageId { get => ouvrageId; set => ouvrageId = value; }
-        internal int ClientId { get => clientId; set => clientId = value; }
+        internal string OuvrageId { get => ouvrageId; set => ouvrageId = value; }
+        internal string ClientId { get => clientId; set => clientId = value; }
+
+        public Emprunt(string ouvrageId, string clientId, string dateEmprunt, string dateRendre)
+        {
+            this.ouvrageId = ouvrageId;
+            this.clientId = clientId;
+            this.dateEmprunt = dateEmprunt;
+            this.dateRendre = dateRendre;
+        }
     }
 }
