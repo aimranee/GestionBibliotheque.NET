@@ -110,10 +110,5 @@ namespace GestionBibl.controllers
             conn.Close();
             return dt;
         }
-
-
-
-
-
     }
 }

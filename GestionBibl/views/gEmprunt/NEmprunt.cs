@@ -1,5 +1,5 @@
 ﻿using GestionBibl.controllers;
-using GestionBibl.Model;
+using GestionBibl.models;
 using System.Data;
 using System.Globalization;
 using System.Text.RegularExpressions;
@@ -14,6 +14,7 @@ namespace GestionBibl.views
         public string idC, idO;
         public DateTime dateD;
         public DateTime dateF;
+        public int stock = 0;
 
         public NEmprunt(GEmpunts prunt)
         {
@@ -78,7 +79,9 @@ namespace GestionBibl.views
             if (button5.Text == "Enregistrer")
             {
                 Emprunt emprunt = new Emprunt(ClientId.Text.Trim(), OuvrageId.Text.Trim(), dateTimePicker.Value.ToString(), dateTimePicker1.Value.ToString());
-                EmpruntController.AjouterEmprunt(emprunt);
+                
+                EmpruntController.AjouterEmprunt(emprunt, stock);
+
                 Clear();
             }
             if (button5.Text == "Editer")
@@ -122,11 +125,30 @@ namespace GestionBibl.views
             }
         }
 
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             foreach (DataGridViewRow row in dataGridView2.SelectedRows)
             {
-                OuvrageId.Text = row.Cells[0].Value.ToString();
+                if (int.Parse(row.Cells[3].Value.ToString()!) < 1)
+                {
+                    MessageBox.Show("Le stock est vide!!\n", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    stock = int.Parse(row.Cells[3].Value.ToString()!);
+                    OuvrageId.Text = row.Cells[0].Value.ToString();
+                }
+                
             }
         }
     }

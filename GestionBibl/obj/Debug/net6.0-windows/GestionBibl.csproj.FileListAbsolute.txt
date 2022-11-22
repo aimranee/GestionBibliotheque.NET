@@ -4,7 +4,6 @@ C:\Users\aimra\source\repos\GestionBibl\GestionBibl\bin\Debug\net6.0-windows\Ges
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\bin\Debug\net6.0-windows\GestionBibl.dll
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\bin\Debug\net6.0-windows\GestionBibl.pdb
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.csproj.AssemblyReference.cache
-C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.Form1.resources
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.Properties.Resources.resources
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.csproj.GenerateResource.cache
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.GeneratedMSBuildEditorConfig.editorconfig
@@ -62,3 +61,4 @@ C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\G
 C:\Users\Benat\OneDrive\Bureau\Projet C#\gestionbiblio\GestionBibliotheque.NET\GestionBibl\obj\Debug\net6.0-windows\ref\GestionBibl.dll
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.PageHome.resources
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.views.NEmprunt.resources
+C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.Form1.resources

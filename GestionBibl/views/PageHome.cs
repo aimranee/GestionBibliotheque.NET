@@ -16,8 +16,8 @@ namespace GestionBibl
         public PageHome()
         {
             InitializeComponent();
-            GClient gClient = new GClient();
-            addUserConrol(gClient);
+            GEmpunts gEmprint = new GEmpunts();
+            addUserConrol(gEmprint);
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestionBibl.Model
+namespace GestionBibl.models
 {
-    internal class Utilisateur
+    internal class Admin
     {
         private int id;
         private string nom;
@@ -16,7 +16,7 @@ namespace GestionBibl.Model
         private static int count;
         private string[] row;
 
-        public Utilisateur(string nom, string prenom, string cin, string password)
+        public Admin(string nom, string prenom, string cin, string password)
         {
             this.id = count++;
             this.nom = nom;

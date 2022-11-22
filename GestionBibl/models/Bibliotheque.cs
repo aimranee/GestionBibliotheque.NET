@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestionBibl.Model
+namespace GestionBibl.models
 {
     internal abstract class Bibliotheque
     {

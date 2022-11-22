@@ -4,34 +4,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestionBibl.Model
+namespace GestionBibl.models
 {
     internal class Ouvrage
     {
         private int id;
         private int stock;
-        private int cote;
-        private static int count;
+        private string cote;
+        private string titre;
+        private string type;
 
-        public Ouvrage(int id, int stock, int cote) : this(id, stock)
+        public Ouvrage(int stock, string cote, string titre, string type)
         {
-            this.cote = cote;
-        }
-
-        public Ouvrage(int stock, int cote)
-        {
-            id = count++;
+            this.type = type;
             this.stock = stock;
             this.cote = cote;
+            this.titre = titre;
         }
 
-        public int Stock { get => stock; set => stock = value; }
-        public int Cote { get => cote; set => cote = value; }
         public int Id { get => id; set => id = value; }
-
-        public string toString()
-        {
-            return "";
-        }
+        public int Stock { get => stock; set => stock = value; }
+        public string Cote { get => cote; set => cote = value; }
+        public string Titre { get => titre; set => titre = value; }
+        public string Type { get => type; set => type = value; }
     }
 }

@@ -88,5 +88,10 @@ namespace GestionBibl
                 textPassword.UseSystemPasswordChar = true;
             }
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

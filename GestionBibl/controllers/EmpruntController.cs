@@ -1,4 +1,4 @@
-﻿using GestionBibl.Model;
+﻿using GestionBibl.models;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -27,7 +27,7 @@ namespace GestionBibl.controllers
             return cnn;
         }
 
-        public static void AjouterEmprunt(Emprunt emprunt)
+        public static void AjouterEmprunt(Emprunt emprunt, int stock)
         {
             string sql = "INSERT INTO emprunt VALUES (@ClientId, @OuvrageId, @dateEmprunt, @dateRendre)";
             MySqlConnection cnn = GetConnection();
@@ -40,6 +40,8 @@ namespace GestionBibl.controllers
             try
             {
                 cmd.ExecuteNonQuery();
+                int n = 1;
+                OuvrageController.UpdateStockOuvrage(stock, emprunt.OuvrageId, n);
                 MessageBox.Show("L'emprunt ajouter aves success.", "Inforamtion", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
@@ -78,7 +80,7 @@ namespace GestionBibl.controllers
             cnn.Close();
         }
 
-        public static void SupprimerEmprunt(string idC, string idO)
+        public static void SupprimerEmprunt(int stock, string idC, string idO)
         {
             string sql = "DELETE FROM emprunt WHERE clientId = @clientId and ouvrageId = @ouvrageId";
             MySqlConnection cnn = GetConnection();
@@ -90,6 +92,8 @@ namespace GestionBibl.controllers
             try
             {
                 cmd.ExecuteNonQuery();
+                int n = 0;
+                OuvrageController.UpdateStockOuvrage(stock, idO, n);
                 MessageBox.Show("L'emprunt supprimer aves success.", "Inforamtion", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }

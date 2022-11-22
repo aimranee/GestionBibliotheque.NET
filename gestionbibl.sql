@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mer. 16 nov. 2022 à 22:24
+-- Généré le : mar. 22 nov. 2022 à 12:22
 -- Version du serveur :  10.4.18-MariaDB
 -- Version de PHP : 7.4.18
 
@@ -51,15 +51,18 @@ CREATE TABLE `client` (
   `nom` varchar(20) NOT NULL,
   `prenom` varchar(20) NOT NULL,
   `cin` varchar(20) NOT NULL,
-  `status` int(11) NOT NULL
+  `statut` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Déchargement des données de la table `client`
 --
 
-INSERT INTO `client` (`id`, `nom`, `prenom`, `cin`, `status`) VALUES
-(1, 'test', 'test', 'test', 0);
+INSERT INTO `client` (`id`, `nom`, `prenom`, `cin`, `statut`) VALUES
+(3, 'dfgfh', 'egfh', 'N4er666', 'Bloquer'),
+(4, 'aimrane', 'essakhi', 'N449666', 'Bloquer'),
+(5, 'dfgfh', 'egfh', 'N4er666', 'Bloquer'),
+(6, 'aimrane', 'essakhi', 'N4496', 'Debloquer');
 
 -- --------------------------------------------------------
 
@@ -70,8 +73,8 @@ INSERT INTO `client` (`id`, `nom`, `prenom`, `cin`, `status`) VALUES
 CREATE TABLE `emprunt` (
   `clientId` int(11) NOT NULL,
   `ouvrageId` int(11) NOT NULL,
-  `dateEmprunt` date NOT NULL,
-  `dateRendre` date NOT NULL
+  `dateEmprunt` varchar(100) NOT NULL,
+  `dateRendre` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -82,14 +85,24 @@ CREATE TABLE `emprunt` (
 
 CREATE TABLE `ouvrage` (
   `id` int(11) NOT NULL,
-  `cote` int(11) DEFAULT NULL,
-  `qntt` int(11) DEFAULT NULL,
+  `cote` varchar(100) DEFAULT NULL,
+  `qntt` int(11) DEFAULT 0,
   `titre` varchar(100) DEFAULT NULL,
   `auteur` varchar(100) DEFAULT NULL,
+  `type` varchar(25) NOT NULL,
   `editeur` varchar(100) DEFAULT NULL,
   `nump` int(11) DEFAULT NULL,
   `periodicite` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `ouvrage`
+--
+
+INSERT INTO `ouvrage` (`id`, `cote`, `qntt`, `titre`, `auteur`, `type`, `editeur`, `nump`, `periodicite`) VALUES
+(1, '13', 15, 'test', 'tesst', 'Livre', 'efdg', 123, 12),
+(2, 'fdg234', 15, 'AZER', 'ezretr', 'CD', 'fsgdgf', 1213, 123),
+(3, 'QQS', 12, 'ZAE', 'DDS', 'LIVRE', 'SSSS', NULL, NULL);
 
 --
 -- Index pour les tables déchargées
@@ -133,13 +146,13 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT pour la table `client`
 --
 ALTER TABLE `client`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT pour la table `ouvrage`
 --
 ALTER TABLE `ouvrage`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
