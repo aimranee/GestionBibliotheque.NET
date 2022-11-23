@@ -1,6 +1,6 @@
 ﻿namespace GestionBibl
 {
-    partial class GEmpunts
+    partial class GOuvrages
     {
         /// <summary> 
         /// Required designer variable.
@@ -37,58 +37,26 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.SearchB = new System.Windows.Forms.TextBox();
             this.dataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.clientid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ouvrageid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateemprunt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.daterendre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cote = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.titre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewButtonColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.SearchB = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GestionBibl.Properties.Resources.icons8_search_50;
-            this.pictureBox1.Location = new System.Drawing.Point(680, 48);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(22, 23);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel5.Location = new System.Drawing.Point(514, 70);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(188, 1);
-            this.panel5.TabIndex = 22;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
-            // 
-            // SearchB
-            // 
-            this.SearchB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.SearchB.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.SearchB.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.SearchB.Location = new System.Drawing.Point(514, 48);
-            this.SearchB.Name = "SearchB";
-            this.SearchB.Size = new System.Drawing.Size(157, 19);
-            this.SearchB.TabIndex = 21;
-            this.SearchB.TextChanged += new System.EventHandler(this.ClientName_TextChanged);
             // 
             // dataGridView
             // 
@@ -109,10 +77,11 @@
             this.dataGridView.ColumnHeadersHeight = 30;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.clientid,
-            this.ouvrageid,
-            this.dateemprunt,
-            this.daterendre,
+            this.id,
+            this.cote,
+            this.titre,
+            this.stock,
+            this.Column2,
             this.Column1,
             this.Column7});
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -124,7 +93,7 @@
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView.DefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataGridView.Location = new System.Drawing.Point(27, 77);
+            this.dataGridView.Location = new System.Drawing.Point(73, 92);
             this.dataGridView.MultiSelect = false;
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
@@ -133,8 +102,8 @@
             this.dataGridView.RowTemplate.Height = 25;
             this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.RowHeaderSelect;
             this.dataGridView.ShowEditingIcon = false;
-            this.dataGridView.Size = new System.Drawing.Size(618, 238);
-            this.dataGridView.TabIndex = 0;
+            this.dataGridView.Size = new System.Drawing.Size(627, 238);
+            this.dataGridView.TabIndex = 26;
             this.dataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.dataGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
@@ -156,88 +125,50 @@
             this.dataGridView.ThemeStyle.RowsStyle.Height = 25;
             this.dataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick);
             // 
-            // pictureBox3
+            // id
             // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = global::GestionBibl.Properties.Resources.icons8_plus_math_48;
-            this.pictureBox3.Location = new System.Drawing.Point(27, 32);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(39, 39);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 24;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Image = global::GestionBibl.Properties.Resources.icons8_available_updates_48;
-            this.pictureBox4.Location = new System.Drawing.Point(93, 32);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(39, 39);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 25;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::GestionBibl.Properties.Resources.clip_reading_books1;
-            this.pictureBox5.Location = new System.Drawing.Point(226, -9);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(256, 222);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox5.TabIndex = 27;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::GestionBibl.Properties.Resources.clip_library1;
-            this.pictureBox2.Location = new System.Drawing.Point(612, 23);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(216, 292);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 26;
-            this.pictureBox2.TabStop = false;
-            // 
-            // clientid
-            // 
-            this.clientid.DataPropertyName = "clientid";
+            this.id.DataPropertyName = "id";
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.clientid.DefaultCellStyle = dataGridViewCellStyle3;
-            this.clientid.HeaderText = "Client ID";
-            this.clientid.Name = "clientid";
-            this.clientid.ReadOnly = true;
+            this.id.DefaultCellStyle = dataGridViewCellStyle3;
+            this.id.HeaderText = "ID";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
             // 
-            // ouvrageid
+            // cote
             // 
-            this.ouvrageid.DataPropertyName = "ouvrageid";
+            this.cote.DataPropertyName = "cote";
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ouvrageid.DefaultCellStyle = dataGridViewCellStyle4;
-            this.ouvrageid.HeaderText = "Ouvrage ID";
-            this.ouvrageid.Name = "ouvrageid";
-            this.ouvrageid.ReadOnly = true;
+            this.cote.DefaultCellStyle = dataGridViewCellStyle4;
+            this.cote.HeaderText = "Cote";
+            this.cote.Name = "cote";
+            this.cote.ReadOnly = true;
             // 
-            // dateemprunt
+            // titre
             // 
-            this.dateemprunt.DataPropertyName = "dateemprunt";
+            this.titre.DataPropertyName = "titre";
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateemprunt.DefaultCellStyle = dataGridViewCellStyle5;
-            this.dateemprunt.HeaderText = "Date Emprunt";
-            this.dateemprunt.Name = "dateemprunt";
-            this.dateemprunt.ReadOnly = true;
+            this.titre.DefaultCellStyle = dataGridViewCellStyle5;
+            this.titre.HeaderText = "Titre";
+            this.titre.Name = "titre";
+            this.titre.ReadOnly = true;
             // 
-            // daterendre
+            // stock
             // 
-            this.daterendre.DataPropertyName = "daterendre";
+            this.stock.DataPropertyName = "qntt";
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.daterendre.DefaultCellStyle = dataGridViewCellStyle6;
-            this.daterendre.HeaderText = "Date Rendre";
-            this.daterendre.Name = "daterendre";
-            this.daterendre.ReadOnly = true;
+            this.stock.DefaultCellStyle = dataGridViewCellStyle6;
+            this.stock.HeaderText = "Stock";
+            this.stock.Name = "stock";
+            this.stock.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "type";
+            this.Column2.HeaderText = "Type";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
             // Column1
             // 
@@ -271,47 +202,111 @@
             this.Column7.Text = "Supprimer";
             this.Column7.UseColumnTextForButtonValue = true;
             // 
-            // GEmpunts
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel5.Location = new System.Drawing.Point(534, 85);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(188, 1);
+            this.panel5.TabIndex = 29;
+            // 
+            // SearchB
+            // 
+            this.SearchB.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SearchB.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.SearchB.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.SearchB.Location = new System.Drawing.Point(534, 63);
+            this.SearchB.Name = "SearchB";
+            this.SearchB.Size = new System.Drawing.Size(157, 19);
+            this.SearchB.TabIndex = 28;
+            this.SearchB.TextChanged += new System.EventHandler(this.SearchB_TextChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GestionBibl.Properties.Resources.icons8_search_50;
+            this.pictureBox1.Location = new System.Drawing.Point(700, 63);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(22, 23);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::GestionBibl.Properties.Resources.icons8_cd_collection_96;
+            this.pictureBox2.Location = new System.Drawing.Point(73, 33);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(47, 47);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 30;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = global::GestionBibl.Properties.Resources.icons8_books_64;
+            this.pictureBox3.Location = new System.Drawing.Point(150, 33);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(47, 47);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 31;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.Image = global::GestionBibl.Properties.Resources.icons8_papers_64;
+            this.pictureBox4.Location = new System.Drawing.Point(225, 33);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(47, 47);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 32;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // GOuvrages
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.SearchB);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox2);
-            this.Name = "GEmpunts";
+            this.Name = "GOuvrages";
             this.Size = new System.Drawing.Size(769, 376);
-            this.Load += new System.EventHandler(this.GEmpunts_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.GOuvrages_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private PictureBox pictureBox1;
+
+        private Guna.UI2.WinForms.Guna2DataGridView dataGridView;
         private Panel panel5;
         private TextBox SearchB;
-        private Guna.UI2.WinForms.Guna2DataGridView dataGridView;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox2;
-        private DataGridViewTextBoxColumn clientid;
-        private DataGridViewTextBoxColumn ouvrageid;
-        private DataGridViewTextBoxColumn dateemprunt;
-        private DataGridViewTextBoxColumn daterendre;
+        private PictureBox pictureBox1;
+        private DataGridViewTextBoxColumn id;
+        private DataGridViewTextBoxColumn cote;
+        private DataGridViewTextBoxColumn titre;
+        private DataGridViewTextBoxColumn stock;
+        private DataGridViewTextBoxColumn Column2;
         private DataGridViewButtonColumn Column1;
         private DataGridViewButtonColumn Column7;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox4;
     }
 }

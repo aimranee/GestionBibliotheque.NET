@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GestionBibl
+namespace GestionBibl.views.gOuvrage
 {
-    public partial class GOuvrages : UserControl
+    public partial class FormOuvrage : Form
     {
-        public GOuvrages()
+        public FormOuvrage()
         {
             InitializeComponent();
-        }
-
-        private void GOuvrages_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

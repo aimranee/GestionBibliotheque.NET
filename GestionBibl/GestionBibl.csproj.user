@@ -1,6 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="views\gOuvrage\FormCd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="views\gOuvrage\FormLivre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="views\gOuvrage\FormPerio.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="views\gClient\GClient.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -13,7 +22,7 @@
     <Compile Update="views\gEmprunt\GEmpunts.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="views\GOuvrages.cs">
+    <Compile Update="views\gOuvrage\GOuvrages.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="views\gEmprunt\NEmprunt.cs">

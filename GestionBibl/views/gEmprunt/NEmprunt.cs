@@ -141,7 +141,7 @@ namespace GestionBibl.views
         private void label6_Click(object sender, EventArgs e)
         {
             Clear();
-            this.Hide();
+            this.Close();
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
