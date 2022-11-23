@@ -16,5 +16,10 @@ namespace GestionBibl
         {
             InitializeComponent();
         }
+
+        private void GOuvrages_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

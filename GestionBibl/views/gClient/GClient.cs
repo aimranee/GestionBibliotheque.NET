@@ -127,11 +127,7 @@ namespace GestionBibl.views
 
         }
 
-        private void btnAjouter_Click(object sender, EventArgs e)
-        {
-            Ajouter();
-            dataGridView.DataSource = controllerClient.LoadData();
-        }
+       
 
         private void dataGridView_SelectionChanged(object sender, EventArgs e)
         {
@@ -142,30 +138,36 @@ namespace GestionBibl.views
                 txtPrenom.Text = row.Cells["prenom"].Value.ToString();
                 txtCIN.Text = row.Cells["cin"].Value.ToString();
                 comboBox1.SelectedItem = row.Cells["statut"].Value.ToString();
-                btnModifier.Enabled = true;
-                btnSupprimer.Enabled = true;
+                pictureBox_Modifier.Enabled = true;
+                pictureBox_supprimer.Enabled = true;
             }
         }
 
-        private void btnModifier_Click(object sender, EventArgs e)
+       
+
+        private void pictureBox_Rechercher_Click(object sender, EventArgs e)
         {
-            Modifier();
-            dataGridView.DataSource = controllerClient.LoadData();
+            SearchData();
         }
 
-        private void btnSupprimer_Click(object sender, EventArgs e)
+        private void pictureBox_supprimer_Click(object sender, EventArgs e)
         {
             Supprimer();
             dataGridView.DataSource = controllerClient.LoadData();
         }
 
-
-
-        private void button1_Click(object sender, EventArgs e)
+        private void pictureBox_Modifier_Click(object sender, EventArgs e)
         {
-            SearchData();
+            Modifier();
+            dataGridView.DataSource = controllerClient.LoadData();
         }
 
+        private void pictureBox_Ajouter_Click(object sender, EventArgs e)
+        {
+            Ajouter();
+            dataGridView.DataSource = controllerClient.LoadData();
+        }
 
+        
     }
 }

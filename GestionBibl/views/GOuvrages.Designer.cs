@@ -47,6 +47,7 @@
             this.Controls.Add(this.label1);
             this.Name = "GOuvrages";
             this.Size = new System.Drawing.Size(769, 376);
+            this.Load += new System.EventHandler(this.GOuvrages_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
