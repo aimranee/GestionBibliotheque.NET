@@ -1,7 +1,11 @@
+using MySql.Data.MySqlClient;
+using System.Data;
+
 namespace GestionBibl
 {
     public partial class Form1 : Form
     {
+        int i;
         public Form1()
         {
             InitializeComponent();
@@ -42,27 +46,80 @@ namespace GestionBibl
 
         }
 
+        public static MySqlConnection GetConnection()
+        {
+            string sql = @"server=localhost;userid=root;password=;database=gestionbibl";
+            MySqlConnection cnn = new MySqlConnection(sql);
+
+            try
+            {
+                cnn.Open();
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Can not open connection ! \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return cnn;
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textUserName.Text=="admin" && textPassword.Text == "1234")
+            /*string cs = @"server=localhost;userid=root;password=;database=gestionbibl";
+            var con = new MySqlConnection(cs);*/
+            if (textUserName.Text != "" && textPassword.Text != "")
             {
-                new PageHome().Show();
-                this.Hide();
-            }
-            else if (textUserName.Text == "" || textPassword.Text == "")
-            {
-                MessageBox.Show("Nom d'utilisateur ou mot de passe est incorrect");
-                textUserName.Clear();
-                textPassword.Clear();
-                textUserName.Focus();
+                try
+                {
+                    i = 0;
+                    string sql = "select username, password from admin WHERE username = @username AND password = @Password";
+                    MySqlConnection con = GetConnection();
+                    MySqlCommand cmd = new MySqlCommand(sql, con);
+                    cmd.Parameters.AddWithValue("@username", textUserName.Text.ToUpper());
+                    cmd.Parameters.AddWithValue("@password", textPassword.Text);
+                    MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
+                    DataTable tbl = new DataTable();
+                    adp.Fill(tbl);
+                    i = Convert.ToInt32(tbl.Rows.Count.ToString());
+                    if (i == 0)
+                    {
+                        MessageBox.Show("Nom d'utilisateur ou mot de passe est incorrect.\n", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        textUserName.Clear();
+                        textPassword.Clear();
+                        textUserName.Focus();
+                    }
+                    else
+                    {
+                        con.Close();
+                        main_form();
+                    }
+                    
+                    
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Nom d'utilisateur ou mot de passe est incorrect.\n" + ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    textUserName.Clear();
+                    textPassword.Clear();
+                    textUserName.Focus();
+                }
             }
             else
             {
-                MessageBox.Show("Les champs vide!!");
+                
+                MessageBox.Show("Les champs vide!!.\n", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textUserName.Clear();
                 textPassword.Clear();
                 textUserName.Focus();
+                
             }
+            
+        }
+
+        private void main_form()
+        {
+            this.Hide();
+            PageHome home = new PageHome();
+            home.ShowDialog();
+            this.Close();
         }
 
         private void label4_Click(object sender, EventArgs e)

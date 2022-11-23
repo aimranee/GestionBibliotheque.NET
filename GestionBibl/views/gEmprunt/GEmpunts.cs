@@ -31,7 +31,7 @@ namespace GestionBibl
 
         public void Dispaly()
         {
-            EmpruntController.DisplayAndSearch("SELECT clientid, ouvrageid, dateEmprunt, dateRendre FROM emprunt", dataGridView);
+            EmpruntController.DisplayAndSearch("SELECT e.clientid, e.ouvrageid, e.dateEmprunt, e.dateRendre, o.qntt FROM emprunt e, ouvrage o where e.ouvrageId = o.id", dataGridView);
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -50,8 +50,8 @@ namespace GestionBibl
             if (e.ColumnIndex == 0)
             {
                 formEmprunt.Clear();
-                formEmprunt.idC = dataGridView.Rows[e.RowIndex].Cells[2].Value.ToString()!;
                 formEmprunt.idO = dataGridView.Rows[e.RowIndex].Cells[3].Value.ToString()!;
+                formEmprunt.idC = dataGridView.Rows[e.RowIndex].Cells[2].Value.ToString()!;
                 formEmprunt.dateD = DateTime.Parse(dataGridView.Rows[e.RowIndex].Cells[4].Value.ToString()!);
                 formEmprunt.dateF = DateTime.Parse(dataGridView.Rows[e.RowIndex].Cells[5].Value.ToString()!);
                 formEmprunt.UpdateEmprunt();
@@ -63,8 +63,10 @@ namespace GestionBibl
             {
                 if (MessageBox.Show("Souhaitez-vous supprimer l'emprunt ?", "Information", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
-                    stock = int.Parse(dataGridView.Rows[e.RowIndex].Cells[4].Value.ToString()!);
-                    EmpruntController.SupprimerEmprunt(stock, dataGridView.Rows[e.RowIndex].Cells[2].Value.ToString()!, dataGridView.Rows[e.RowIndex].Cells[3].Value.ToString()!);
+                    //stock = Int16.Parse(dataGridView.Rows[e.RowIndex].Cells[6].Value.ToString()!)+1;
+                    //OuvrageController.UpdateStock(stock, dataGridView.Rows[e.RowIndex].Cells[3].Value.ToString()!);
+                    EmpruntController.SupprimerEmprunt(dataGridView.Rows[e.RowIndex].Cells[2].Value.ToString()!, dataGridView.Rows[e.RowIndex].Cells[3].Value.ToString()!);
+                    
                 }
 
                 return;

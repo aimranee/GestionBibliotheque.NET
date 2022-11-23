@@ -58,6 +58,7 @@ namespace GestionBibl.views
         {
             ClientId.Text = OuvrageId.Text = string.Empty;
             dateTimePicker.Value = DateTime.Now;
+            dateTimePicker1.Value = DateTime.Now;
         }
         private void button5_Click(object sender, EventArgs e)
         {
@@ -78,17 +79,19 @@ namespace GestionBibl.views
             }
             if (button5.Text == "Enregistrer")
             {
-                Emprunt emprunt = new Emprunt(ClientId.Text.Trim(), OuvrageId.Text.Trim(), dateTimePicker.Value.ToString(), dateTimePicker1.Value.ToString());
-                
-                EmpruntController.AjouterEmprunt(emprunt, stock);
-
+                Emprunt emprunt = new Emprunt(OuvrageId.Text.Trim(), ClientId.Text.Trim(), dateTimePicker.Value.ToString(), dateTimePicker1.Value.ToString());
+                EmpruntController.AjouterEmprunt(emprunt);
+                /*OuvrageController.UpdateStockOuvrageM(stock, emprunt.OuvrageId);*/
                 Clear();
+                this.Hide();
             }
             if (button5.Text == "Editer")
             {
 
-                Emprunt emprunt = new Emprunt(ClientId.Text.Trim(), OuvrageId.Text.Trim(), dateTimePicker.Value.ToString(), dateTimePicker1.Value.ToString());
+                Emprunt emprunt = new Emprunt(OuvrageId.Text.Trim(), ClientId.Text.Trim(), dateTimePicker.Value.ToString(), dateTimePicker1.Value.ToString());
                 EmpruntController.UpdateEmprunt(emprunt, idC, idO);
+                Clear();
+                this.Hide();
             }
         }
 
@@ -133,6 +136,12 @@ namespace GestionBibl.views
         private void pictureBox4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Clear();
+            this.Hide();
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)

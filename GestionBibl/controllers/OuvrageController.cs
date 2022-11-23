@@ -1,4 +1,5 @@
 ﻿using GestionBibl.models;
+using Google.Protobuf.WellKnownTypes;
 using MySql.Data.MySqlClient;
 using Org.BouncyCastle.Asn1.Utilities;
 using System;
@@ -169,23 +170,74 @@ namespace GestionBibl
             con.Close();
         }
 
-        public static void UpdateStockOuvrage(int stock, string id, int n)
+        public static void UpdateStock(int stock, string id)
         {
-            string sql = "UPDATE INTO ouvrage SET qntt = @qntt WHERE id = @cdId";
+            string sql = "UPDATE ouvrage SET qntt = @qntt WHERE id = 5";
             MySqlConnection con = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);
-            if (n == 0)
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@qntt", stock);
+            /*cmd.Parameters.Add("@qntt", MySqlDbType.VarChar).Value = stock;
+            cmd.Parameters.Add("@id", MySqlDbType.VarChar).Value = id;*/
+            MessageBox.Show(stock + "  " + id);
+            try
             {
-                int stq = stock++;
-                cmd.Parameters.Add("@qntt", MySqlDbType.VarChar).Value = stq;
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Le stock est modifie avec success.", "InformationError", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            if (n == 1)
+            catch (MySqlException ex)
             {
-                int stq = stock--;
-                cmd.Parameters.Add("@qntt", MySqlDbType.VarChar).Value = stq;
+                MessageBox.Show("Le stock n'est pas modifie.\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            cmd.Parameters.Add("@cdId", MySqlDbType.VarChar).Value = id;
+            con.Close();
         }
+
+        /*
+                public static void UpdateStockOuvrageM(int stock, string id)
+                {
+                    int stq = 9;
+                    string sql = "UPDATE INTO ouvrage SET qntt = @qntt WHERE id = @cdId";
+                    MySqlConnection con = GetConnection();
+                    MySqlCommand cmd = new MySqlCommand(sql, con);
+                    cmd.CommandType = CommandType.Text;
+                    *//*stq = stock--;*//*
+                    cmd.Parameters.Add("@qntt", MySqlDbType.VarChar).Value = stq;
+                    cmd.Parameters.Add("@cdId", MySqlDbType.VarChar).Value = id;
+                    MessageBox.Show(stq + "  " + id );
+                    try
+                    {
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("Stock updated. \n" , "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (MySqlException ex)
+                    {
+                        MessageBox.Show("Error. \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    con.Close();
+                }
+
+                public static void UpdateStockOuvrageP(int stock, string id)
+                {
+                    int stq = 0;
+                    string sql = "UPDATE INTO ouvrage SET qntt = @qntt WHERE id = @cdId";
+                    MySqlConnection con = GetConnection();
+                    MySqlCommand cmd = new MySqlCommand(sql, con);
+                    cmd.CommandType = CommandType.Text;
+                    stq = stock++;
+                    cmd.Parameters.Add("@qntt", MySqlDbType.VarChar).Value = stq;
+                    cmd.Parameters.Add("@cdId", MySqlDbType.VarChar).Value = id;
+                    MessageBox.Show("  " + stq + "  " + id);
+                    try
+                    {
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("Stock updated. \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (MySqlException ex)
+                    {
+                        MessageBox.Show("Error. \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    con.Close();
+                }*/
 
         public static void DeleteOuvrage(string id) 
         {

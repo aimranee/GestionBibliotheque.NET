@@ -56,5 +56,10 @@ namespace GestionBibl
         {
             Application.Exit();
         }
+
+        private void panel3_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

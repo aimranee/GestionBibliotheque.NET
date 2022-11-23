@@ -45,6 +45,7 @@
             this.ouvrageid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateemprunt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.daterendre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -70,9 +71,9 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel5.Location = new System.Drawing.Point(411, 70);
+            this.panel5.Location = new System.Drawing.Point(514, 70);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(291, 1);
+            this.panel5.Size = new System.Drawing.Size(188, 1);
             this.panel5.TabIndex = 22;
             // 
             // SearchB
@@ -80,9 +81,9 @@
             this.SearchB.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SearchB.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.SearchB.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.SearchB.Location = new System.Drawing.Point(411, 48);
+            this.SearchB.Location = new System.Drawing.Point(514, 48);
             this.SearchB.Name = "SearchB";
-            this.SearchB.Size = new System.Drawing.Size(260, 19);
+            this.SearchB.Size = new System.Drawing.Size(157, 19);
             this.SearchB.TabIndex = 21;
             this.SearchB.TextChanged += new System.EventHandler(this.ClientName_TextChanged);
             // 
@@ -109,6 +110,7 @@
             this.ouvrageid,
             this.dateemprunt,
             this.daterendre,
+            this.Column2,
             this.Column1,
             this.Column7});
             dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -190,6 +192,14 @@
             this.daterendre.HeaderText = "Date Rendre";
             this.daterendre.Name = "daterendre";
             this.daterendre.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "qntt";
+            this.Column2.HeaderText = "qntt";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Visible = false;
             // 
             // Column1
             // 
@@ -289,12 +299,13 @@
         private Guna.UI2.WinForms.Guna2DataGridView dataGridView;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
+        private PictureBox pictureBox2;
         private DataGridViewTextBoxColumn clientid;
         private DataGridViewTextBoxColumn ouvrageid;
         private DataGridViewTextBoxColumn dateemprunt;
         private DataGridViewTextBoxColumn daterendre;
+        private DataGridViewTextBoxColumn Column2;
         private DataGridViewButtonColumn Column1;
         private DataGridViewButtonColumn Column7;
-        private PictureBox pictureBox2;
     }
 }
