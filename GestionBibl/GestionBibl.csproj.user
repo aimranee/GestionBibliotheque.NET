@@ -7,6 +7,9 @@
     <Compile Update="views\gOuvrage\FormLivre.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="views\gOuvrage\FormOuvrage.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="views\gOuvrage\FormPerio.cs">
       <SubType>Form</SubType>
     </Compile>

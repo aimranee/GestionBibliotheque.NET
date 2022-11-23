@@ -1,4 +1,5 @@
 ﻿using GestionBibl.controllers;
+using GestionBibl.views.gOuvrage;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,7 @@ namespace GestionBibl.views
 {
     public partial class FormPerio : Form
     {
+        FormOuvrage formOuvrage = new FormOuvrage();
         public FormPerio()
         {
             InitializeComponent();
@@ -53,6 +55,11 @@ namespace GestionBibl.views
 
                 return;
             }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            formOuvrage.ShowDialog();
         }
     }
 }

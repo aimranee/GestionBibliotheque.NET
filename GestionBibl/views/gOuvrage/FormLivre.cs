@@ -1,4 +1,5 @@
 ﻿using GestionBibl.controllers;
+using GestionBibl.views.gOuvrage;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,7 @@ namespace GestionBibl.views
 {
     public partial class FormLivre : Form
     {
+        FormOuvrage formOuvrage = new FormOuvrage();
         public FormLivre()
         {
             InitializeComponent();
@@ -78,7 +80,7 @@ namespace GestionBibl.views
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
+            formOuvrage.ShowDialog();
         }
 
         private void FormLivre_Load(object sender, EventArgs e)

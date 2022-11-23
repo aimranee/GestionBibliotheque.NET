@@ -65,3 +65,4 @@ C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\Ges
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.views.FormCd.resources
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.views.FormLivre.resources
 C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.views.FormPerio.resources
+C:\Users\aimra\source\repos\GestionBibl\GestionBibl\obj\Debug\net6.0-windows\GestionBibl.views.gOuvrage.FormOuvrage.resources

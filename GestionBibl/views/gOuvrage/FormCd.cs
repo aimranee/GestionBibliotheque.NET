@@ -1,4 +1,5 @@
 ﻿using GestionBibl.controllers;
+using GestionBibl.views.gOuvrage;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,7 @@ namespace GestionBibl.views
 {
     public partial class FormCd : Form
     {
+        FormOuvrage formOuvrage = new FormOuvrage();
         public FormCd()
         {
             InitializeComponent();
@@ -35,7 +37,7 @@ namespace GestionBibl.views
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
+            formOuvrage.ShowDialog();
         }
 
         private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -58,7 +60,7 @@ namespace GestionBibl.views
                 {
                     //stock = Int16.Parse(dataGridView.Rows[e.RowIndex].Cells[6].Value.ToString()!)+1;
                     //OuvrageController.UpdateStock(stock, dataGridView.Rows[e.RowIndex].Cells[3].Value.ToString()!);
-                    EmpruntController.SupprimerEmprunt(dataGridView.Rows[e.RowIndex].Cells[2].Value.ToString()!, dataGridView.Rows[e.RowIndex].Cells[3].Value.ToString()!);
+                    OuvrageController.DeleteOuvrage(dataGridView.Rows[e.RowIndex].Cells[2].Value.ToString()!);
 
                 }
 
